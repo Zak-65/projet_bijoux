@@ -49,6 +49,7 @@ header {
 
 /* fin part1 */
 
+/* debut part2 */
 aside {
   background: rgb(63, 62, 62);
   color: white;
@@ -76,3 +77,21 @@ aside:first-of-type h1 {
   font-size: 2em;
   gap: 15px;
 }
+
+p:nth-child(2) {
+  padding-bottom: 25px;
+}
+
+/* fin part2 */
+
+/* debut part3 */
+
+.part_3 {
+  background-image: url(assets/test.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* fin part3 */
