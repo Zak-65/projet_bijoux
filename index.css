@@ -1,12 +1,9 @@
 * {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
   padding: 0;
 }
 /*  debut part1 */
-header {
-  background-color: transparent;
-  height: 100px;
-}
 
 .part_1 {
   background-image: url(assets/pexels-ron-lach-9145351.jpg);
@@ -17,15 +14,15 @@ header {
   font-size: 1.5em;
 }
 
-header {
+.header {
   background-color: transparent;
   height: 80px;
   color: rgb(250, 250, 250);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 30px;
   padding-right: 30px;
-  align-items: center;
 }
 
 .button_media {
@@ -45,6 +42,26 @@ header {
   text-decoration: none;
   color: white;
   font-size: 0.8em;
+}
+
+.part_1_V2 {
+  display: flex;
+  color: rgb(61, 59, 59);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60%;
+}
+
+.part_1_V2 a {
+  color: rgb(126, 96, 96);
+  text-decoration: none;
+  background: rgb(212, 209, 209);
+  height: 60px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* fin part1 */
@@ -91,7 +108,22 @@ p:nth-child(2) {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 50vh;
 }
 
 /* fin part3 */
+
+/* debut part4 */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: gray;
+  color: white;
+}
+
+main:first-of-type h1 {
+  color: rgb(243, 47, 47);
+  padding: 35px;
+}
