@@ -184,4 +184,44 @@ main:first-of-type h1 {
 /* fin part5 */
 
 /* debut part6 */
-/*  */
+.part_6 {
+  background: gray;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.part_6 > img {
+  height: 100%;
+}
+
+.text_part6 {
+  text-align: justify;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 1.3em;
+  color: white;
+  gap: 20px;
+}
+
+.text_part6 > a {
+  text-decoration: none;
+  color: gray;
+  background-color: white;
+  height: 70px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_part6 > p {
+  color: black;
+}
+/* fin part6 */
