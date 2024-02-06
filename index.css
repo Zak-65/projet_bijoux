@@ -30,6 +30,10 @@
   padding-right: 30px;
 }
 
+.header > p {
+  font-size: 1.2em;
+}
+
 .button_media {
   width: 15%;
   display: flex;
@@ -51,7 +55,7 @@
 
 .part_1_V2 {
   display: flex;
-  color: rgb(95, 82, 23);
+  color: rgb(0, 0, 0);
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -60,24 +64,43 @@
 
 .text_part1 {
   text-align: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .part_1_V2 a {
-  color: rgb(126, 96, 96);
+  color: rgb(161, 138, 138);
   text-decoration: none;
-  background: rgb(212, 209, 209);
+  background: rgb(14, 8, 8);
   height: 60px;
   width: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 
 /* fin part1 */
 
 /* debut part2 */
 aside {
-  background: rgb(56, 56, 59);
+  background-image: linear-gradient(
+    to bottom,
+    #38383b,
+    #4d4a4d,
+    #635e5f,
+    #787272,
+    #8d8885,
+    #888380,
+    #827e7b,
+    #7d7976,
+    #5d5a58,
+    #3f3c3c,
+    #222121,
+    #000000
+  );
   color: white;
   display: flex;
   flex-direction: column;
@@ -119,11 +142,11 @@ p:nth-child(2) {
 /* debut part3 */
 
 .part_3 {
-  background-image: url(assets/test.jpg);
+  background-image: url(assets/11.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
 }
 
 /* fin part3 */
@@ -134,7 +157,21 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: rgb(168, 166, 161);
+  background-image: linear-gradient(
+    to top,
+    #38383b,
+    #4d4a4d,
+    #635e5f,
+    #787272,
+    #8d8885,
+    #888380,
+    #827e7b,
+    #7d7976,
+    #5d5a58,
+    #3f3c3c,
+    #222121,
+    #000000
+  );
   color: white;
 }
 
@@ -194,7 +231,21 @@ main:first-of-type h1 {
 
 /* debut part6 */
 .part_6 {
-  background: rgb(168, 166, 161);
+  background-image: linear-gradient(
+    to top,
+    #38383b,
+    #4d4a4d,
+    #635e5f,
+    #787272,
+    #8d8885,
+    #888380,
+    #827e7b,
+    #7d7976,
+    #5d5a58,
+    #3f3c3c,
+    #222121,
+    #000000
+  );
   height: 100vh;
   display: flex;
   align-items: center;
@@ -202,7 +253,8 @@ main:first-of-type h1 {
 }
 
 .part_6 > img {
-  height: 100%;
+  height: 90%;
+  border-radius: 20px;
 }
 
 .text_part6 {
@@ -267,3 +319,10 @@ footer {
   justify-content: space-between;
 }
 /* fin footer */
+
+/* media tabllet */
+@media (min-width: 427px) and (max-width: 768px) {
+  aside {
+    background-color: red;
+  }
+}
