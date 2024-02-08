@@ -41,6 +41,22 @@
   justify-content: space-between;
 }
 
+.instagram{
+  height:30px;
+}
+.facebook{
+  height:45px;
+}
+.twitter{
+  height:65px;
+}
+.panier{
+  height:30px;
+}
+.menu{
+  display:none;
+}
+
 .menu_button {
   width: 30%;
   display: flex;
@@ -321,8 +337,25 @@ footer {
 /* fin footer */
 
 /* media tabllet */
-@media (min-width: 427px) and (max-width: 768px) {
-  aside {
-    background-color: red;
+@media (max-width:768px) {
+
+  .button_media{
+    display:none;
   }
+  .menu_button{
+    display:none;
+  }
+  .menu{
+    display:flex;
+    height:30px;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
