@@ -1,3 +1,12 @@
+@keyframes anim_header{
+  0%{
+    transform: translateY(-50px);
+
+  }
+  100%{
+    transform: translateY(1.7px);
+  }
+}
 @font-face {
   font-family: "first";
   src: url(SortsMillGoudy-Italic.ttf);
@@ -8,6 +17,37 @@
   margin: 0;
   padding: 0;
 }
+/* style button header  */
+.style_button {
+  cursor: pointer;
+  position: relative;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+}
+
+.style_button:hover {
+  color: #ccba1c;
+}
+
+.style_button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.style_button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition-duration: 400ms;
+}
+
+/* --------------- */
+
 /*  debut part1 */
 
 .part_1 {
@@ -20,6 +60,8 @@
 }
 
 .header {
+  animation-name:anim_header;
+  animation-duration:3s;
   background-color: transparent;
   height: 80px;
   color: rgb(250, 250, 250);
@@ -89,13 +131,16 @@
 .part_1_V2 a {
   color: rgb(161, 138, 138);
   text-decoration: none;
-  background: rgb(14, 8, 8);
+  background: rgb(75, 60, 60);
   height: 60px;
   width: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+}
+.part_1_V2 a:hover {
+  background-color: rgb(14, 8, 8);
 }
 
 /* fin part1 */
@@ -247,6 +292,7 @@ main:first-of-type h1 {
 
 /* debut part6 */
 .part_6 {
+  height: 80vh;
   background-image: linear-gradient(
     to top,
     #38383b,
@@ -268,19 +314,29 @@ main:first-of-type h1 {
 }
 
 .part_6 > img {
-  height: 90%;
-  border-radius: 20px;
+  height: 60vh;
+  border-radius: 10px;
 }
 
-.button_acheter_carte {
+.button_acheter_carte > a {
+  color: rgb(161, 138, 138);
   text-decoration: none;
-  color: gray;
-  background-color: white;
-  height: 70px;
-  width: 280px;
+  background: rgb(75, 60, 60);
+  height: 60px;
+  width: 230px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button_acheter_carte > a:hover {
+  background-color: rgb(14, 8, 8);
+}
+
+.button_acheter_carte {
+  display: flex;
+  justify-content: center;
 }
 
 .text_part6 {
@@ -296,6 +352,7 @@ main:first-of-type h1 {
 
 .text_part6 > p {
   color: black;
+  padding: 10px;
 }
 /* fin part6 */
 /* debut footer */
@@ -333,8 +390,57 @@ footer {
 }
 /* fin footer */
 
-/* media tabllet */
+/* media tablette */
 @media (max-width: 768px) {
+  .button_media {
+    display: none;
+  }
+  .menu_button {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    height: 30px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .inscription {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .part_5 {
+    text-align: center;
+  }
+  .inscription > input {
+    width: 70%;
+  }
+  .part_6 {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
+  .part_6 > img {
+    width: 40%;
+    height: 40vh;
+    margin-top: 10px;
+  }
+  .text_part6 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+  }
+}
+
+/* media telephone */
+@media (max-width: 426px) {
   .button_media {
     display: none;
   }
@@ -367,6 +473,7 @@ footer {
   .part_6 {
     display: flex;
     flex-direction: column;
+    height: 100vh;
   }
   .part_6 > img {
     width: 50%;
@@ -378,5 +485,4 @@ footer {
     height: 30vh;
     display: flex;
   }
-
 }
