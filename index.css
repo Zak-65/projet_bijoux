@@ -1,9 +1,8 @@
-@keyframes anim_header{
-  0%{
+@keyframes anim_header {
+  0% {
     transform: translateY(-50px);
-
   }
-  100%{
+  100% {
     transform: translateY(1.7px);
   }
 }
@@ -60,8 +59,8 @@
 }
 
 .header {
-  animation-name:anim_header;
-  animation-duration:3s;
+  animation-name: anim_header;
+  animation-duration: 3s;
   background-color: transparent;
   height: 80px;
   color: rgb(250, 250, 250);
