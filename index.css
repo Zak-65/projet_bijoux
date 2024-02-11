@@ -117,6 +117,9 @@
   align-items: center;
   justify-content: space-evenly;
   height: 60%;
+  padding-top: 10vh;
+  transition: 3s;
+  transition-duration: 1.5s;
 }
 
 .text_part1 {
@@ -137,6 +140,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  transition: 0.5s;
 }
 .part_1_V2 a:hover {
   background-color: rgb(14, 8, 8);
