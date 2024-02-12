@@ -16,6 +16,18 @@
   margin: 0;
   padding: 0;
 }
+/* _______________ */
+.button_whatsapp {
+  height: 65px;
+  width: 65px;
+  border-radius: 90px;
+  position:absolute;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+
+}
+/* ________________ */
 /* style button header  */
 .style_button {
   cursor: pointer;
@@ -118,8 +130,6 @@
   justify-content: space-evenly;
   height: 60%;
   padding-top: 10vh;
-  transition: 3s;
-  transition-duration: 1.5s;
 }
 
 .text_part1 {
