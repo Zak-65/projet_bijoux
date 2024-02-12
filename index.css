@@ -1,3 +1,9 @@
+* {
+  font-family: "first";
+
+  margin: 0;
+  padding: 0;
+}
 @keyframes anim_header {
   0% {
     transform: translateY(-50px);
@@ -10,22 +16,15 @@
   font-family: "first";
   src: url(SortsMillGoudy-Italic.ttf);
 }
-* {
-  font-family: "first";
-
-  margin: 0;
-  padding: 0;
-}
 /* _______________ */
 .button_whatsapp {
   height: 65px;
   width: 65px;
   border-radius: 90px;
-  position:absolute;
-  position:fixed;
-  bottom:10px;
-  right:10px;
-
+  position: absolute;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 /* ________________ */
 /* style button header  */
@@ -210,6 +209,12 @@ p:nth-child(2) {
   box-shadow: 0px 0px 20px 5px black;
   height: 400px;
 }
+
+.img_card:hover {
+  box-shadow: 1px 1px 20px 3px rgba(255, 255, 255, 0.705);
+  transition:1.5s;
+}
+
 
 /* fin part2 */
 
@@ -404,7 +409,7 @@ footer {
 /* fin footer */
 
 /* media tablette */
-@media (max-width: 768px) {
+@media (max-width: 1010px) {
   .button_media {
     display: none;
   }
