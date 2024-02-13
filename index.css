@@ -25,6 +25,7 @@
   position: fixed;
   bottom: 10px;
   right: 10px;
+  box-shadow: 0px 0px 5px 1px rgb(49, 133, 49);
 }
 /* ________________ */
 /* style button header  */
@@ -69,7 +70,7 @@
   font-size: 1.5em;
 }
 
-.header {
+#header {
   animation-name: anim_header;
   animation-duration: 3s;
   background-color: transparent;
@@ -82,7 +83,7 @@
   padding-right: 30px;
 }
 
-.header > p {
+#header > p {
   font-size: 1.2em;
 }
 
@@ -149,10 +150,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  transition: 0.5s;
 }
 .part_1_V2 a:hover {
   background-color: rgb(14, 8, 8);
+}
+
+#btn_menu{
+  display:none;
 }
 
 /* fin part1 */
@@ -212,9 +216,8 @@ p:nth-child(2) {
 
 .img_card:hover {
   box-shadow: 1px 1px 20px 3px rgba(255, 255, 255, 0.705);
-  transition:1.5s;
+  transition: 1.5s;
 }
-
 
 /* fin part2 */
 
@@ -413,14 +416,35 @@ footer {
   .button_media {
     display: none;
   }
+
+  #btn_menu{
+    display:block;
+    height:30px;
+    content: url(assets/menu.png);
+  }
+
+  .active #btn_menu{
+    height:30px;
+    content: url(assets/btn_menu_open.png);
+    z-index:2;
+  }
+
+  .active .menu_button{
+    right:0%;
+  }
+
   .menu_button {
-    display: none;
+    position: fixed;
+    right: -100%;
+    top: 0%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    background-color: #38383bbb;
   }
-  .menu {
-    display: flex;
-    height: 30px;
-  }
-  .header {
+  #header {
     display: flex;
     justify-content: space-between;
   }
@@ -462,14 +486,39 @@ footer {
   .button_media {
     display: none;
   }
+
+  #btn_menu{
+    display:block;
+    height:30px;
+    content: url(assets/menu.png);
+  }
+
+  .active #btn_menu{
+    height:30px;
+    content: url(assets/btn_menu_open.png);
+    z-index:2;
+  }
+
+  .active .menu_button{
+    right:0%;
+  }
+  
   .menu_button {
-    display: none;
+    position: fixed;
+    right: -100%;
+    top: 0%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    background-color: #38383bbb;
   }
   .menu {
     display: flex;
     height: 30px;
   }
-  .header {
+  #header {
     display: flex;
     justify-content: space-between;
   }
