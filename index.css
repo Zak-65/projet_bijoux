@@ -455,7 +455,6 @@ footer {
     right: -100%;
     top: 85%;
     width: 80%;
-
   }
   #header {
     display: flex;
@@ -515,6 +514,11 @@ footer {
   .active .menu_button{
     right:0%;
   }
+
+  .active .button_media{
+    right:0%;
+  }
+
   
   .menu_button {
     position: fixed;
@@ -526,6 +530,14 @@ footer {
     height: 100vh;
     width: 80%;
     background-color: #38383bbb;
+  }
+  .button_media{
+    display: flex;
+    justify-content:space-evenly;
+    position: fixed;
+    right: -100%;
+    top: 85%;
+    width: 80%;
   }
   .menu {
     display: flex;
