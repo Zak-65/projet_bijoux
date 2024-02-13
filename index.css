@@ -571,6 +571,7 @@ footer {
     width: 50%;
     height: 40vh;
     margin-top: 10px;
+    animation: infinite;
   }
   .text_part6 {
     width: 100%;
