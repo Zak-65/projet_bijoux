@@ -160,6 +160,9 @@ section {
 
 /* ______________card_____________ */
 
+.card_container{
+  border: solid red ;
+}
 .all_card {
   padding-top: 10vh;
   display: flex;
@@ -306,10 +309,6 @@ h4 {
   #header {
     display: flex;
     justify-content: space-between;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
   }
   .inscription {
     display: flex;
