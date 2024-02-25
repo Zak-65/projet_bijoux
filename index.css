@@ -434,6 +434,7 @@ footer {
 
   .active .menu_button {
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     right: 0%;
   }
 
@@ -518,6 +519,7 @@ footer {
 
   .active .menu_button {
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     right: 0%;
   }
 
