@@ -127,7 +127,8 @@ header > p {
 }
 #btn_menu {
   display: none;
-}.logo {
+}
+.logo {
   text-decoration: none;
   color: rgb(240, 230, 140);
 }
@@ -168,7 +169,7 @@ section {
 
 .img_card {
   height: 350px;
-  width:280px;
+  width: 280px;
 }
 
 .card_conatiner:hover {
