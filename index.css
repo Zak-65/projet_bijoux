@@ -529,7 +529,8 @@ footer {
     right: -100%;
     top: 0%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 55px;
     align-items: center;
     height: 100vh;
     width: 80%;
