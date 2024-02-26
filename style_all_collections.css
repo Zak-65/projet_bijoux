@@ -258,6 +258,13 @@ h4 {
 /* fin footer */
 /* debut part contact */
 
+aside {
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
 article {
   display: flex;
   flex-direction: column;
