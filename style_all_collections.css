@@ -256,6 +256,28 @@ h4 {
   color: white;
 }
 /* fin footer */
+/* debut part contact */
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+article button {
+  width: 210px;
+  height: 30px;
+  background-color: #ccba1c;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+article button:hover {
+  background-color: #ffcc22;
+}
+
+/* fin part contact */
 
 /* media tablette */
 @media (max-width: 1010px) {
